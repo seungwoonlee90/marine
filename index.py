@@ -1,4 +1,4 @@
-import config
+import os
 import pandas as pd
 import re
 import dash
@@ -85,7 +85,7 @@ def map(user):
         )],
         'layout': go.Layout(
             mapbox=dict(
-                accesstoken=config.api_key,
+                accesstoken=os.environ.get('MARINE'),
                 center=go.layout.mapbox.Center(lat=zoom_lat, lon=zoom_long),
                 style='dark',
                 zoom=8
