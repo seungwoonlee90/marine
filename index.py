@@ -15,7 +15,8 @@ server=app.server
 
 app.layout = html.Div([
     html.Div([
-        html.H1('2021년 해양조난사고 현황 🚢')
+        html.H1('2020년 해양조난사고 현황 🚢'),
+        html.A(html.P('by Ethanlee'), href='https://github.com/seungwoonlee90', id='gitlink')
     ],id='header'),
     html.Div([
         html.Div([

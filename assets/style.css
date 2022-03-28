@@ -14,6 +14,11 @@ body {
   text-align: center;
 }
 
+#gitlink {
+  text-decoration: none;
+  color: white;
+}
+
 #user {
   color: black;
 }
