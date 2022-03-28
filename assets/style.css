@@ -1,0 +1,63 @@
+body {
+  background: dimgray;
+  color: white;
+  font-size: 1.5 em;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#user {
+  color: black;
+}
+
+#second-container,
+#third-container,
+#forth-container {
+  display: flex;
+  justify-content: center;
+}
+
+.create_container {
+  border-radius: 5px;
+  background-color: #010915;
+  margin: 18px;
+  padding: 15px;
+  box-shadow: 2px 2px 2px #010915;
+  width: 33%;
+  text-align: center;
+  display: block;
+}
+
+.two {
+  width: 50%;
+}
+
+.map {
+  width: 100%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    margin-top: 5vh;
+  }
+  #second-container,
+  #third-container,
+  #forth-container {
+    display: block !important;
+    text-align: center;
+  }
+  .create_container,
+  .two,
+  .map {
+    width: 85%;
+    display: inline-block;
+  }
+}
